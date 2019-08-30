@@ -9,12 +9,30 @@ import java.util.stream.Collectors;
 
 public class FoodDaoImpl implements FoodDao {
 
-    public List<Food> createMenu(Food food) {
+    Map<Integer, Food> vipMenu = new HashMap<>();
+    Map<Integer, Food> economyMenu = new HashMap<>();
+
+    @Override
+    public List<Food> createMenu(Food menu) {
+        return null;
+    }
+
+    @Override
+    public void createBusinessMenu() {
+
+    }
+
+    @Override
+    public void createEconomyMenu() {
+
+    }
+
+   /* public List<Food> createMenu(Food food) {
         Map<Integer, Food> vipMenu = new HashMap<>();
         Map<Integer, Food> economyMenu = new HashMap<>();
 
 
-     /*   Food menu1 = new Food("VegetarianMenu", "VIP", 350.0);
+     *//*   Food menu1 = new Food("VegetarianMenu", "VIP", 350.0);
         vipMenu.put(1, menu1);
         Food menu2 = new Food("MeatMenu", "VIP", 450.0);
         vipMenu.put(2, menu2);
@@ -26,7 +44,7 @@ public class FoodDaoImpl implements FoodDao {
         Food menuT2 = new Food("MeatMenu", "Economy", 350.0);
         economyMenu.put(2, menuT2);
         Food menuT3 = new Food("ChickenMenu", "Economy", 300.0);
-        economyMenu.put(3, menuT3);*/
+        economyMenu.put(3, menuT3);*//*
 
 
 
@@ -45,4 +63,5 @@ public class FoodDaoImpl implements FoodDao {
 
         }
 
+}*/
 }
