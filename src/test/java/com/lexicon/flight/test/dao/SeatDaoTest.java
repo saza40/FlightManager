@@ -3,6 +3,9 @@ package com.lexicon.flight.test.dao;
 import Dao.SeatDao;
 import Dao.SeatDaoImpl;
 import Domain.Seat;
+import java.util.List;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -26,7 +29,13 @@ public class SeatDaoTest {
         seatDao.createSeatBusiness(3, seat3);
         seatDao.createSeatBusiness(4, seat4);
         seatDao.createSeatBusiness(5, seat5);
-        System.out.println(seatDao.getAllBusiness());
+//        System.out.println(seatDao.getAllBusiness());
+
+        List<Seat> seats = seatDao.getAllBusiness();
+        seats.stream()
+                .forEach(seat -> System.out.println( seat.toString())) ;
+
+        //Assert.assertEquals(seat1, seats.get(1));
     }
 
     @Test

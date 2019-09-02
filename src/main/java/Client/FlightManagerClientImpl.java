@@ -33,12 +33,11 @@ public class FlightManagerClientImpl implements FlightManagerClient {
     }
 
     @Override
-    public void createTicket() {
+    public void createTicket(SeatDao seatDao) {
 
         Scanner scanner = new Scanner(System.in);
         FlightDaoImpl flightDao = new FlightDaoImpl();
         PassengerDaoImpl passengerDao = new PassengerDaoImpl();
-        SeatDaoImpl seatDao = new SeatDaoImpl();
         FoodDaoImpl foodDao = new FoodDaoImpl();
         System.out.println("Please inter 1 for business and 2 for Economy class :");
         int num = scanner.nextInt();
@@ -48,13 +47,13 @@ public class FlightManagerClientImpl implements FlightManagerClient {
         Passenger passenger = null;
         Finance totalPrice = null;
         if (num == 1) {
-            if (!seatDao.getAllBusiness().isEmpty()) {
+            if (seatDao.getAllBusiness().isEmpty()) {
                 System.out.println("Business tickets have expired,inter 1 for economy or 0 for exist");
                 int num2 = scanner.nextInt();
                 if (num2 == 0) {
                     System.exit(0);
                 }
-                if (!seatDao.getAllEconomy().isEmpty()) {
+                if (seatDao.getAllEconomy().isEmpty()) {
                     System.out.println("All tickets have expired");
                     System.exit(0);
                 }
@@ -118,13 +117,13 @@ public class FlightManagerClientImpl implements FlightManagerClient {
             System.exit(0);
 
         }
-        if (!seatDao.getAllEconomy().isEmpty()) {
+        if (seatDao.getAllEconomy().isEmpty()) {
             System.out.println("Economy tickets have expired,inter 1 for business or 0 for exist");
             int num5 = scanner.nextInt();
             if (num5 == 0) {
                 System.exit(0);
             }
-            if (!seatDao.getAllBusiness().isEmpty()) {
+            if (seatDao.getAllBusiness().isEmpty()) {
                 System.out.println("All tickets have expired");
                 System.exit(0);
             }

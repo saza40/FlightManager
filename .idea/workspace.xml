@@ -4,6 +4,11 @@
     <list default="true" id="ead21b21-933f-479b-8bb8-0ee701f7ef56" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/dao/SeatDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/dao/SeatDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/FlightManagerClientImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/FlightManagerClientImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lexicon/flight/test/dao/SeatDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lexicon/flight/test/dao/SeatDaoTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,22 +61,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FoodDaoTest.economyMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FlightManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lexicon.flight.test.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lexicon.flight.test.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lexicon.flight.test.dao.FoodDaoTest" />
-      <option name="METHOD_NAME" value="economyMenu" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FoodDaoTest.vipMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
@@ -104,6 +93,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeatDaoTest.listBusiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FlightManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lexicon.flight.test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lexicon.flight.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lexicon.flight.test.dao.SeatDaoTest" />
+      <option name="METHOD_NAME" value="listBusiness" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SeatDaoTest.listEconomy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
@@ -123,10 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SeatDaoTest.listBusiness" />
         <item itemvalue="JUnit.IntegrationTest.test" />
         <item itemvalue="JUnit.FoodDaoTest.vipMenu" />
         <item itemvalue="JUnit.SeatDaoTest.listEconomy" />
-        <item itemvalue="JUnit.FoodDaoTest.economyMenu" />
       </list>
     </recent_temporary>
   </component>
