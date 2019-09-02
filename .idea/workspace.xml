@@ -2,8 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ead21b21-933f-479b-8bb8-0ee701f7ef56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Client/FinanceManagerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Client/FinanceManagerClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/integration/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/FinanceDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/FinanceDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Dao/FoodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/FoodDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Dao/FoodDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/FoodDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/SeatDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/SeatDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/FlightManagerServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/FlightManagerServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/dao/FoodDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/dao/FoodDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/doamin/FlightDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/domain/FlightDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/FlightManagerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/FlightManagerClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/FlightManagerClientImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/FlightManagerClientImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dao/FinanceDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/FinanceDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dao/FoodDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/FoodDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dao/FoodDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/FoodDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dao/SeatDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/SeatDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Flight$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Flight$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Flight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Food.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Passenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Ticket$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Ticket$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Service/FlightManagerServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Service/FlightManagerServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lexicon/flight/test/doamin/FlightDaoTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +60,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1PxR6NMlIFEEhj2fBcCkSLndqQ9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring_student" />
   </component>
@@ -45,39 +78,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FlightDaoTest.flightTest">
-    <configuration name="FlightDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="FlightManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lexicon.flight.test.doamin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lexicon.flight.test.doamin" />
-      <option name="MAIN_CLASS_NAME" value="com.lexicon.flight.test.doamin.FlightDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlightDaoTest.flightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodDaoTest.economyMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lexicon.flight.test.doamin.*" />
+          <option name="PATTERN" value="com.lexicon.flight.test.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lexicon.flight.test.doamin" />
-      <option name="MAIN_CLASS_NAME" value="com.lexicon.flight.test.doamin.FlightDaoTest" />
-      <option name="METHOD_NAME" value="flightTest" />
+      <option name="PACKAGE_NAME" value="com.lexicon.flight.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lexicon.flight.test.dao.FoodDaoTest" />
+      <option name="METHOD_NAME" value="economyMenu" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeatDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodDaoTest.vipMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
         <pattern>
@@ -86,23 +111,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.lexicon.flight.test.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lexicon.flight.test.dao.SeatDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.lexicon.flight.test.dao.FoodDaoTest" />
+      <option name="METHOD_NAME" value="vipMenu" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeatDaoTest.listBusiness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FlightManager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lexicon.flight.test.dao.*" />
+          <option name="PATTERN" value="com.lexicon.flight.test.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lexicon.flight.test.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lexicon.flight.test.dao.SeatDaoTest" />
-      <option name="METHOD_NAME" value="listBusiness" />
+      <option name="PACKAGE_NAME" value="com.lexicon.flight.test.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.lexicon.flight.test.integration.IntegrationTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FlightDaoTest.flightTest" />
-        <item itemvalue="JUnit.FlightDaoTest" />
-        <item itemvalue="JUnit.SeatDaoTest" />
-        <item itemvalue="JUnit.SeatDaoTest.listBusiness" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.IntegrationTest.test" />
+        <item itemvalue="JUnit.FoodDaoTest.vipMenu" />
         <item itemvalue="JUnit.SeatDaoTest.listEconomy" />
+        <item itemvalue="JUnit.FoodDaoTest.economyMenu" />
       </list>
     </recent_temporary>
   </component>

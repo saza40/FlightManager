@@ -17,6 +17,7 @@ public abstract class FinanceDaoImpl implements FinanceDao {
 
     }
 
+
     @Override
     public double getTotalIncome() {
 

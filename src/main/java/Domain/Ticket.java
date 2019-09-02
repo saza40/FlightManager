@@ -1,5 +1,8 @@
 package Domain;
 
+
+import java.util.Random;
+
 public class Ticket {
     private String reservationId;
     private Flight flight;
@@ -73,7 +76,7 @@ public class Ticket {
         private Finance totalPrice;
 
         public Builder withReservationId(String reservationId) {
-            this.reservationId = reservationId;
+            this.reservationId = new Random().toString();
             return this;
         }
 

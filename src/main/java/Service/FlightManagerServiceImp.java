@@ -1,15 +1,14 @@
 package Service;
 
-import Dao.FlightDao;
-import Dao.FlightDaoImpl;
-import Dao.PassengerDao;
-import Dao.TicketDao;
+import Dao.*;
 import Domain.Flight;
 import Domain.Passenger;
 import Domain.Ticket;
 
 public class FlightManagerServiceImp implements FlightManagerService {
+
     FlightDao flightDao = new FlightDaoImpl();
+
     @Override
     public void createFlight(Flight flight) {
 
@@ -18,14 +17,15 @@ public class FlightManagerServiceImp implements FlightManagerService {
 
     @Override
     public void createPassenger(Passenger p) {
+        Passenger passenger =Passenger.builder().withPassengerName(p.getPassengerName()).withPassengerId(p.getPassengerId()).build();
 
-        PassengerDao passengerDao = null;
-        passengerDao.createPassenger(p);
+        PassengerDao passengerDao =new PassengerDaoImpl();
+        passengerDao.createPassenger(passenger);
     }
 
     @Override
     public void createTicket(Ticket ticket) {
-        TicketDao ticketDao = null;
+        TicketDao ticketDao = new TicketDaoImpl();
         ticketDao.createTicket(ticket);
 
     }

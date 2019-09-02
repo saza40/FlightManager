@@ -6,9 +6,9 @@ public class Food {
     private Double menuPrice;
 
     public Food(Builder builder) {
-        this.menuName = menuName;
-        this.menuType = menuType;
-        this.menuPrice = menuPrice;
+        this.menuName = builder.menuName;
+        this.menuType = builder.menuType;
+        this.menuPrice = builder.menuPrice;
 
     }
 

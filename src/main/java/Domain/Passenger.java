@@ -9,8 +9,8 @@ public class Passenger {
     private String passengerId;
 
     private Passenger(Builder builder) {
-        this.passengerName = Objects.requireNonNull(builder.passengerName, "PassengerName should not be null");
-        this.passengerId = Objects.requireNonNull(builder.passengerId, "PassengerId should not be null");
+        this.passengerName = builder.passengerName;
+        this.passengerId =builder.passengerId;
     }
 
     public String getPassengerName() {

@@ -15,11 +15,11 @@ public class SeatDaoImpl implements SeatDao {
    public void createSeatEconomy(int num,Seat seat){economy.put(num,seat);}
 
 
-
+@Override
     public List<Seat> getAllBusiness() {
         return (List<Seat>) business.values().stream().map(b -> Seat.builder().withSeatType(b.getSeatType()).withSeatPrice(b.getSeatPrice()).build()).collect(Collectors.toList());
     }
-
+@Override
     public List<Seat> getAllEconomy() {
         return (List<Seat>) economy.values().stream().map(e -> Seat.builder().withSeatType(e.getSeatType()).withSeatPrice(e.getSeatPrice()).build()).collect(Collectors.toList());
 

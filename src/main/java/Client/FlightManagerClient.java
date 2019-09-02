@@ -5,7 +5,7 @@ import Domain.Passenger;
 import Domain.Ticket;
 
 public interface FlightManagerClient {
-    void createPassenger(Passenger passenger);
-    void createFlight(Flight flight);
-    void createTicket(Ticket ticket);
+    void createPassenger();
+    void createFlight();
+    void createTicket();
 }

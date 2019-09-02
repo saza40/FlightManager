@@ -1,12 +1,13 @@
 package Dao;
 
 import Domain.Food;
-import com.sun.tools.javac.util.List;
+import java.util.List;
 
 public interface FoodDao {
-    List<Food> createMenu(Food menu);
+    void createBusinessMenu(int num,Food food);
+    void createEconomyMenu(int num,Food food);
 
-     void createBusinessMenu();
-     void createEconomyMenu();
+    List<Food> getAllBusiness();
+    List<Food> getAllEconomy();
 
 }

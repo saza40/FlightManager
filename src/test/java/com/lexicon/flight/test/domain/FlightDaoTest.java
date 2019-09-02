@@ -1,10 +1,9 @@
-package com.lexicon.flight.test.doamin;
+package com.lexicon.flight.test.domain;
 
 
 import Dao.FlightDao;
 import Dao.FlightDaoImpl;
 import Domain.Flight;
-import Service.FlightManagerService;
 import org.junit.Assert;
 import org.junit.Test;
 

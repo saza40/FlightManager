@@ -1,10 +1,6 @@
 package Domain;
 
 
-import com.sun.tools.javac.util.List;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Objects;
 
 public class Flight {
@@ -15,21 +11,17 @@ public class Flight {
 
     private String flightDestination;
 
-    private LinkedList<Seat> economySeat;
-
-
-    private LinkedList<Seat> businessSeat;
 
     private Flight() {
 
     }
 
     private Flight(Builder builder) {
-        this.flightName = Objects.requireNonNull(builder.flightName, "flightName should not be null");
-        this.flightNumber = Objects.requireNonNull(builder.flightNumber, "flightNumber should not be null");
-        this.flightDestination = Objects.requireNonNull(builder.flightDestination, "FlightDestination should not be null");
-        this.economySeat = builder.economySeat;
-        this.businessSeat = builder.businessSeat;
+        this.flightName = builder.flightName;
+        this.flightNumber = builder.flightNumber;
+        this.flightDestination =builder.flightDestination;
+       /* this.economySeat = builder.economySeat;
+        this.businessSeat = builder.businessSeat;*/
     }
 
     public String getFlightDestination() {
@@ -55,7 +47,7 @@ public class Flight {
     public void setFlightNumber(String flightNumber) {
         this.flightNumber = flightNumber;
     }
-
+/*
     public LinkedList<Seat> getEconomySeat() {
         return economySeat;
     }
@@ -70,7 +62,7 @@ public class Flight {
 
     public void setBusinessSeat(LinkedList<Seat> businessSeat) {
         this.businessSeat = businessSeat;
-    }
+    }*/
 
     public static Builder builder() {
         return new Builder();
@@ -84,10 +76,10 @@ public class Flight {
 
         private String flightDestination;
 
-        private LinkedList<Seat> economySeat = new LinkedList<Seat>();
+    /*    private LinkedList<Seat> economySeat = new LinkedList<Seat>();
 
         private LinkedList<Seat> businessSeat = new LinkedList<Seat>();
-
+*/
 
         public Builder withFlightDestination(String flightDestination) {
             this.flightDestination = flightDestination;
@@ -103,7 +95,7 @@ public class Flight {
             this.flightNumber = flightNumber;
             return this;
         }
-
+/*
         public Builder withEconomySeat(LinkedList<Seat> economySeat) {
             this.economySeat = economySeat;
             return this;
@@ -112,7 +104,7 @@ public class Flight {
         public Builder withBusinessSeat(LinkedList<Seat> businessSeat) {
             this.businessSeat = businessSeat;
             return this;
-        }
+        }*/
 
 
         public Flight build() {
