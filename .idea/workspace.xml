@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ead21b21-933f-479b-8bb8-0ee701f7ef56" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Client/FinanceManagerClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Client/FinanceManagerClientImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/integration/IntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/FinanceDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/FinanceDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/FoodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/FoodDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/FoodDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/FoodDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/SeatDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/SeatDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Passenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/FlightManagerServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/FlightManagerServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/dao/FoodDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/dao/FoodDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/doamin/FlightDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/domain/FlightDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Client/FlightManagerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/FlightManagerClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Client/FlightManagerClientImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/FlightManagerClientImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dao/FinanceDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/FinanceDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dao/FoodDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/FoodDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dao/FoodDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/FoodDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Dao/SeatDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/SeatDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Flight$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Flight$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Flight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Food.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Food.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Passenger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Ticket$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Ticket$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Ticket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Service/FlightManagerServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Service/FlightManagerServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lexicon/flight/test/doamin/FlightDaoTest.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

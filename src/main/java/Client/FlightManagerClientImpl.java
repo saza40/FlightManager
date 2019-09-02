@@ -60,7 +60,7 @@ public class FlightManagerClientImpl implements FlightManagerClient {
                 }
                 List<Seat> economy = seatDao.getAllEconomy();
 
-                Seat seat = economy.get(0);
+                Seat seat = economy.remove(0);
                 System.out.println("<<Choose your food menu>> 1-Vegetarian 2-Meat 3-Chicken :");
                 int num3 = scanner.nextInt();
                 if (num3 == 1) {
@@ -90,7 +90,7 @@ public class FlightManagerClientImpl implements FlightManagerClient {
                 }
             }
             List<Seat> vip = seatDao.getAllBusiness();
-            Seat seat = vip.get(0);
+            Seat seat = vip.remove(0);
             System.out.println("<<Choose your food menu>> 1-Vegetarian 2-Meat 3-Chicken : ");
             int num4 = scanner.nextInt();
             if (num4 == 1) {
@@ -130,7 +130,7 @@ public class FlightManagerClientImpl implements FlightManagerClient {
             }
             List<Seat> business = seatDao.getAllBusiness();
 
-            Seat seat = business.get(0);
+            Seat seat = business.remove(0);
             System.out.println("<<Choose your food menu>> 1-Vegetarian 2-Meat 3-Chicken :");
             int num6 = scanner.nextInt();
             if (num6 == 1) {
@@ -161,7 +161,7 @@ public class FlightManagerClientImpl implements FlightManagerClient {
         }
         List<Seat> economy = seatDao.getAllEconomy();
 
-        Seat seat = economy.get(0);
+        Seat seat = economy.remove(0);
         System.out.println("<<Choose your food menu>> 1-Vegetarian 2-Meat 3-Chicken :");
         int num3 = scanner.nextInt();
         if (num3 == 1) {
