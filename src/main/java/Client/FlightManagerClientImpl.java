@@ -5,6 +5,7 @@ import Domain.*;
 import Service.FlightManagerService;
 
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class FlightManagerClientImpl implements FlightManagerClient {
@@ -33,19 +34,11 @@ public class FlightManagerClientImpl implements FlightManagerClient {
     }
 
     @Override
-    public void createTicket(SeatDao seatDao) {
+    public void createTicket(Random reservationId,FlightDao flightDao,PassengerDao passengerDao,SeatDao seatDao, FoodDao foodDao,FinanceDao totalPrice) {
 
         Scanner scanner = new Scanner(System.in);
-        FlightDaoImpl flightDao = new FlightDaoImpl();
-        PassengerDaoImpl passengerDao = new PassengerDaoImpl();
-        FoodDaoImpl foodDao = new FoodDaoImpl();
         System.out.println("Please inter 1 for business and 2 for Economy class :");
         int num = scanner.nextInt();
-
-        String reservationId = null;
-        Flight flight = null;
-        Passenger passenger = null;
-        Finance totalPrice = null;
         if (num == 1) {
             if (seatDao.getAllBusiness().isEmpty()) {
                 System.out.println("Business tickets have expired,inter 1 for economy or 0 for exist");
@@ -66,7 +59,7 @@ public class FlightManagerClientImpl implements FlightManagerClient {
                     List<Food> economyMenu = foodDao.getAllEconomy();
                     Food food = economyMenu.get(0);
 
-                    Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
+                    Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();
                     service.createTicket(ticket);
                     System.out.println(ticket);
                     System.exit(0);
@@ -74,16 +67,14 @@ public class FlightManagerClientImpl implements FlightManagerClient {
                     List<Food> economyMenu = foodDao.getAllEconomy();
                     Food food = economyMenu.get(1);
 
-                    Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
-                    service.createTicket(ticket);
+                    Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();                    service.createTicket(ticket);
                     System.out.println(ticket);
                     System.exit(0);
                 } else if (num3 == 3) {
                     List<Food> economyMenu = foodDao.getAllEconomy();
                     Food food = economyMenu.get(2);
 
-                    Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
-                    service.createTicket(ticket);
+                    Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();                    service.createTicket(ticket);
                     System.out.println(ticket);
                     System.exit(0);
                 }
@@ -96,22 +87,21 @@ public class FlightManagerClientImpl implements FlightManagerClient {
                 List<Food> vipMenu = foodDao.getAllBusiness();
                 Food food = vipMenu.get(0);
 
-                Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
+                Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();
                 service.createTicket(ticket);
                 System.out.println(ticket);
             } else if (num4 == 2) {
                 List<Food> vipMenu = foodDao.getAllBusiness();
                 Food food = vipMenu.get(1);
 
-                Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
+                Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();
                 service.createTicket(ticket);
                 System.out.println(ticket);
             } else if (num4 == 3) {
                 List<Food> vipMenu = foodDao.getAllBusiness();
                 Food food = vipMenu.get(2);
 
-                Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
-                service.createTicket(ticket);
+                Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();                service.createTicket(ticket);
                 System.out.println(ticket);
             }
             System.exit(0);
@@ -136,15 +126,14 @@ public class FlightManagerClientImpl implements FlightManagerClient {
                 List<Food> vipMenu = foodDao.getAllBusiness();
                 Food food = vipMenu.get(0);
 
-                Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
-                service.createTicket(ticket);
+                Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();                service.createTicket(ticket);
                 System.out.println(ticket);
                 System.exit(0);
             } else if (num6 == 2) {
                 List<Food> vipMenu = foodDao.getAllBusiness();
                 Food food = vipMenu.get(1);
 
-                Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
+                Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();
                 service.createTicket(ticket);
                 System.out.println(ticket);
                 System.exit(0);
@@ -152,8 +141,7 @@ public class FlightManagerClientImpl implements FlightManagerClient {
                 List<Food> vipMenu = foodDao.getAllBusiness();
                 Food food = vipMenu.get(2);
 
-                Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
-                service.createTicket(ticket);
+                Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();                service.createTicket(ticket);
                 System.out.println(ticket);
                 System.exit(0);
             }
@@ -167,27 +155,29 @@ public class FlightManagerClientImpl implements FlightManagerClient {
             List<Food> economyMenu = foodDao.getAllEconomy();
             Food food = economyMenu.get(0);
 
-            Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
-            service.createTicket(ticket);
+            Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();            service.createTicket(ticket);
             System.out.println(ticket);
             System.exit(0);
         } else if (num3 == 2) {
             List<Food> economyMenu = foodDao.getAllEconomy();
             Food food = economyMenu.get(1);
 
-            Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
-            service.createTicket(ticket);
+            Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();            service.createTicket(ticket);
             System.out.println(ticket);
             System.exit(0);
         } else if (num3 == 3) {
             List<Food> economyMenu = foodDao.getAllEconomy();
             Food food = economyMenu.get(2);
 
-            Ticket ticket = Ticket.builder().withReservationId(reservationId).withFlight(flight).withPassenger(passenger).withSeat(seat).withFood(food).withTotalPrice(totalPrice).build();
-            service.createTicket(ticket);
+            Ticket ticket = Ticket.builder().withReservationId((Random) reservationId).withFlight((Flight) flightDao).withPassenger((Passenger) passengerDao).withSeat(seat).withFood(food).withTotalPrice((Finance) totalPrice).build();            service.createTicket(ticket);
             System.out.println(ticket);
             System.exit(0);
         }
+    }
+
+    @Override
+    public void createTicket() {
+
     }
 
     @Override

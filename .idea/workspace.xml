@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ead21b21-933f-479b-8bb8-0ee701f7ef56" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client/FlightManagerClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/TicketDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/TicketDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/dao/SeatDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lexicon/flight/test/dao/SeatDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client/FlightManagerClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/FlightManagerClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Client/FlightManagerClientImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client/FlightManagerClientImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dao/TicketDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dao/TicketDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Ticket$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Ticket$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Domain/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Domain/Ticket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lexicon/flight/test/dao/SeatDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lexicon/flight/test/dao/SeatDaoTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +159,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

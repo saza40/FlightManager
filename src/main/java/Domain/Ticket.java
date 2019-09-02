@@ -4,7 +4,7 @@ package Domain;
 import java.util.Random;
 
 public class Ticket {
-    private String reservationId;
+    private Random reservationId;
     private Flight flight;
     private Passenger passenger;
     private Seat seat;
@@ -54,11 +54,11 @@ public class Ticket {
         this.totalPrice = totalPrice;
     }
 
-    public String getReservationId() {
+    public Random getReservationId() {
         return reservationId;
     }
 
-    public void setReservationId(String reservationId) {
+    public void setReservationId(Random reservationId) {
         this.reservationId = reservationId;
     }
 
@@ -68,15 +68,15 @@ public class Ticket {
 
     public static class Builder {
 
-        private String reservationId;
+        private Random reservationId;
         private Flight flight;
         private Passenger passenger;
         private Seat seat;
         private Food food;
         private Finance totalPrice;
 
-        public Builder withReservationId(String reservationId) {
-            this.reservationId = new Random().toString();
+        public Builder withReservationId(Random reservationId) {
+            this.reservationId = reservationId;
             return this;
         }
 
@@ -110,4 +110,15 @@ public class Ticket {
 
     }
 
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "reservationId='" + reservationId + '\'' +
+                ", flight=" + flight +
+                ", passenger=" + passenger +
+                ", seat=" + seat +
+                ", food=" + food +
+                ", totalPrice=" + totalPrice +
+                '}';
+    }
 }

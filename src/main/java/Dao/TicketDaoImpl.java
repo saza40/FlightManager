@@ -11,12 +11,9 @@ public class TicketDaoImpl implements TicketDao {
 
     private Map<String, Ticket> tickets = new HashMap<>();
 
+    @Override
     public void createTicket(Ticket ticket) {
-        if (tickets.containsKey(ticket.getReservationId())) {
-            throw new RuntimeException("Ticket is Exist");
-        }
 
-        tickets.put(ticket.getReservationId(), ticket);
     }
 
     @Override
